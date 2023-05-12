@@ -22,7 +22,7 @@ var shapes = [
       1, 1, 1 ]
 ];
 var colors = [
-    'cyan', 'orange', 'blue', 'yellow', 'red', 'green', 'purple'
+    'green', 'green', 'green', 'green', 'green', 'green', 'green'
 ];
 
 // creates a new 4x4 shape in global variable 'current'
@@ -44,7 +44,7 @@ function newShape() {
             }
         }
     }
-    
+
     // new shape starts to move
     freezed = false;
     // position where the shape will evolve
@@ -179,7 +179,7 @@ function valid( offsetX, offsetY, newCurrent ) {
                     if (offsetY == 1 && freezed) {
                         lose = true; // lose if the current shape is settled at the top most row
                         document.getElementById('playbutton').disabled = false;
-                    } 
+                    }
                     return false;
                 }
             }
